@@ -8,11 +8,17 @@ Based on 3 different situation, I then generate feature matrix Term Frequency-In
 By each acquired TF-IDF feature matrix, I use K-mean method to conduct clustering (k=5 designated). And use standard deviation within each cluster as an easy index to measure the accuracy prediction within each group, since K-mean is random assigning number as cluster in Python. When a number is closer to 0, it means better clustering of certain group. The result could be summarized as below.
 
 Index for accuracy	Original cluster	Simple k-mean	Filtered k-mean	Filtered tagging k-mean
+
 Cluster 1	          0	                1.350	        1.451	          0.680
+
 Cluster 2	          0	                1.595	        1.886	          0.471
+
 Cluster 3	          0	                0.900	        1.114	          1.136
+
 Cluster 4	          0	                1.414	        1.700	          1.414
+
 Cluster 5	          0	                0.816	        1.700	          1.700
+
 Sum of above	      0	                6.075	        7.850	          5.401
 
 We could observe that by tagging each document (from providing tags), the result is greatly improved, and is best perform of the other two (5.401, or entropy 25.3 \<27.6 \< 29.8). With smaller TF-IDF matrix size but lower prediction error, it also better perform on Cluster 1&2. 
