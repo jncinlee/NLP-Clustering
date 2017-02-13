@@ -11,4 +11,4 @@ By each acquired TF-IDF feature matrix, I use K-mean method to conduct clusterin
 
 We could observe that by tagging each document (from providing tags), the result is greatly improved, and is best perform of the other two (5.401, or entropy 25.3 \<27.6 \< 29.8). With smaller TF-IDF matrix size but lower prediction error, it also better perform on Cluster 1&2. 
 
-This tells us that the NLP process should be a major focus for improving clustering. Since I have some technical issue using ParZu package during the Stemming process, I believe this could largely improve the performance of clustering, and should be a key point.
+This tells us that the NLP process should be a major focus for improving clustering. Since I have some technical issue using ParZu package during the Stemming process, I believe this could largely improve the performance of clustering, and should be a key point to solve the question.
